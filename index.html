@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Completa de Etiquetas HTML</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        header {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eaecef;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        
+        main > h2 {
+            background-color: #e9ecef;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1.5em;
+            margin-top: 40px;
+        }
+        
+        .tag {
+            background-color: white;
+            border-radius: 5px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #4a6fa5;
+        }
+        
+        .tag h2 {
+            color: #e74c3c;
+            border-bottom: none;
+            margin-top: 0;
+            font-family: monospace;
+            font-size: 1.4em;
+        }
+        
+        .tag p {
+            margin-bottom: 15px;
+        }
+        
+        pre {
+            background-color: #f5f7f9;
+            border-radius: 3px;
+            padding: 15px;
+            overflow-x: auto;
+            border: 1px solid #e6e6e6;
+        }
+        
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #d63384;
+        }
+        
+        .nav-category {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .nav-category a {
+            background-color: #eaecef;
+            padding: 5px 10px;
+            border-radius: 3px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9em;
+        }
+        
+        .nav-category a:hover {
+            background-color: #d0d7de;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+            border-top: 1px solid #eaecef;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .tag {
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lista Completa de Etiquetas HTML</h1>
+        <p>Guía de referencia con ejemplos de código</p>
+    </header>
+    
+    <nav>
+        <div class="nav-category">
+            <a href="#estructura">Estructura</a>
+            <a href="#texto">Texto</a>
+            <a href="#formato">Formato</a>
+            <a href="#listas">Listas</a>
+            <a href="#enlaces">Enlaces</a>
+            <a href="#tablas">Tablas</a>
+            <a href="#formularios">Formularios</a>
+            <a href="#multimedia">Multimedia</a>
+            <a href="#semanticas">Semánticas</a>
+            <a href="#metadatos">Metadatos</a>
+            <a href="#programacion">Programación</a>
+        </div>
+    </nav>
+    
+    <main>
+        <h2 id="estructura">1. Estructura del Documento</h2>
+
+        <section class="tag">
+            <h2>&lt;!DOCTYPE&gt;</h2>
+            <p>Define el tipo de documento HTML. Debe aparecer al inicio de cada documento HTML.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;html&gt;</h2>
+            <p>Elemento raíz de un documento HTML. Todos los demás elementos deben ser descendientes de este elemento.</p>
+            <pre><code>&lt;html lang="es"&gt;
+    &lt;!-- Contenido de la página --&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;head&gt;</h2>
+            <p>Contiene metadatos, enlaces a recursos externos y otra información sobre el documento.</p>
+            <pre><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mi Sitio Web&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;body&gt;</h2>
+            <p>Contiene todo el contenido visible del documento HTML.</p>
+            <pre><code>&lt;body&gt;
+    &lt;header&gt;Encabezado&lt;/header&gt;
+    &lt;main&gt;Contenido principal&lt;/main&gt;
+    &lt;footer&gt;Pie de página&lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+        </section>
+
+        <h2 id="metadatos">2. Metadatos</h2>
+
+        <section class="tag">
+            <h2>&lt;meta&gt;</h2>
+            <p>Define metadatos sobre el documento HTML como la codificación, descripción, palabras clave, autor, etc.</p>
+            <pre><code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="description" content="Descripción de la página"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;title&gt;</h2>
+            <p>Define el título del documento que se muestra en la pestaña del navegador.</p>
+            <pre><code>&lt;title&gt;Mi Página Web&lt;/title&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;link&gt;</h2>
+            <p>Establece relaciones entre el documento actual y recursos externos (normalmente CSS).</p>
+            <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;style&gt;</h2>
+            <p>Contiene información de estilo CSS para el documento.</p>
+            <pre><code>&lt;style&gt;
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+&lt;/style&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;base&gt;</h2>
+            <p>Especifica la URL base para todas las URLs relativas dentro del documento.</p>
+            <pre><code>&lt;base href="https://www.ejemplo.com/paginas/"&gt;</code></pre>
+        </section>
+
+        <h2 id="texto">3. Texto y Encabezados</h2>
+
+        <section class="tag">
+            <h2>&lt;h1&gt; a &lt;h6&gt;</h2>
+            <p>Encabezados de seis niveles diferentes, donde h1 es el más importante y h6 el menos importante.</p>
+            <pre><code>&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+&lt;h3&gt;Sección&lt;/h3&gt;
+&lt;h4&gt;Subsección&lt;/h4&gt;
+&lt;h5&gt;Título menor&lt;/h5&gt;
+&lt;h6&gt;Título más pequeño&lt;/h6&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;p&gt;</h2>
+            <p>Define un párrafo de texto.</p>
+            <pre><code>&lt;p&gt;Este es un párrafo de texto. Los párrafos son bloques de texto que el navegador separa automáticamente.&lt;/p&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;br&gt;</h2>
+            <p>Inserta un salto de línea simple (no crea un nuevo párrafo).</p>
+            <pre><code>Esta línea&lt;br&gt;tiene un salto en medio.</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;hr&gt;</h2>
+            <p>Crea una línea horizontal que representa un cambio temático en el contenido.</p>
+            <pre><code>&lt;p&gt;Primer tema&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Segundo tema&lt;/p&gt;</code></pre>
+        </section>
+
+        <h2 id="formato">4. Formato de Texto</h2>
+
+        <section class="tag">
+            <h2>&lt;strong&gt;</h2>
+            <p>Define texto con fuerte importancia, normalmente mostrado en negrita.</p>
+            <pre><code>&lt;p&gt;Esta es una &lt;strong&gt;información importante&lt;/strong&gt; que no debes olvidar.&lt;/p&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;em&gt;</h2>
+            <p>Define texto enfatizado, normalmente mostrado en cursiva.</p>
+            <pre><code>&lt;p&gt;Debes prestar &lt;em&gt;especial atención&lt;/em&gt; a este punto.&lt;/p&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;mark&gt;</h2>
+            <p>Define texto que debe ser marcado o resaltado por su relevancia.</p>
+            <pre><code>&lt;p&gt;No olvides revisar &lt;mark&gt;esta sección&lt;/mark&gt; antes del examen.&lt;/p&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;small&gt;</h2>
+            <p>Define texto más pequeño, como notas o comentarios secundarios.</p>
+            <pre><code>&lt;p&gt;Precio: $99 &lt;small&gt;(impuestos no incluidos)&lt;/small&gt;&lt;/p&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;del&gt;</h2>
+            <p>Define texto que ha sido eliminado del documento, mostrado tachado.</p>
+            <pre><code>&lt;p&gt;&lt;del&gt;$50&lt;/del&gt; $40 - ¡Oferta especial!&lt;/p&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;ins&gt;</h2>
+            <p>Define texto que ha sido insertado en el documento, mostrado subrayado.</p>
+            <pre><code>&lt;p&gt;El evento será &lt;del&gt;el sábado&lt;/del&gt; &lt;ins&gt;el domingo&lt;/ins&gt;.&lt;/p&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;sub&gt;</h2>
+            <p>Define texto en subíndice, mostrado más pequeño y debajo de la línea de texto.</p>
+            <pre><code>&lt;p&gt;La fórmula del agua es H&lt;sub&gt;2&lt;/sub&gt;O.&lt;/p&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;sup&gt;</h2>
+            <p>Define texto en superíndice, mostrado más pequeño y encima de la línea de texto.</p>
+            <pre><code>&lt;p&gt;3&lt;sup&gt;2&lt;/sup&gt; = 9&lt;/p&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;code&gt;</h2>
+            <p>Define texto que representa código de programación.</p>
+            <pre><code>&lt;p&gt;La función &lt;code&gt;console.log()&lt;/code&gt; muestra mensajes en la consola.&lt;/p&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;pre&gt;</h2>
+            <p>Define texto preformateado que conserva espacios y saltos de línea.</p>
+            <pre><code>&lt;pre&gt;
+function saludar() {
+    console.log("Hola mundo");
+}
+&lt;/pre&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;blockquote&gt;</h2>
+            <p>Define una sección que cita contenido de otra fuente.</p>
+            <pre><code>&lt;blockquote cite="https://www.ejemplo.com"&gt;
+    &lt;p&gt;Esta es una cita extensa de otra fuente.&lt;/p&gt;
+&lt;/blockquote&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;q&gt;</h2>
+            <p>Define una cita corta en línea.</p>
+            <pre><code>&lt;p&gt;Como dijo Einstein: &lt;q&gt;La imaginación es más importante que el conocimiento&lt;/q&gt;.&lt;/p&gt;</code></pre>
+        </section>
+
+        <h2 id="listas">5. Listas</h2>
+
+        <section class="tag">
+            <h2>&lt;ul&gt;</h2>
+            <p>Define una lista desordenada (con viñetas).</p>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;Elemento 1&lt;/li&gt;
+    &lt;li&gt;Elemento 2&lt;/li&gt;
+    &lt;li&gt;Elemento 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;ol&gt;</h2>
+            <p>Define una lista ordenada (numerada).</p>
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;Primer paso&lt;/li&gt;
+    &lt;li&gt;Segundo paso&lt;/li&gt;
+    &lt;li&gt;Tercer paso&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;li&gt;</h2>
+            <p>Define un elemento de lista, usado dentro de &lt;ul&gt; o &lt;ol&gt;.</p>
+            <pre><code>&lt;li&gt;Este es un elemento de lista&lt;/li&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;dl&gt;</h2>
+            <p>Define una lista de definiciones.</p>
+            <pre><code>&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;dt&gt;</h2>
+            <p>Define un término en una lista de definiciones.</p>
+            <pre><code>&lt;dt&gt;HTML&lt;/dt&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;dd&gt;</h2>
+            <p>Define la descripción de un término en una lista de definiciones.</p>
+            <pre><code>&lt;dd&gt;Lenguaje de marcado utilizado para crear páginas web.&lt;/dd&gt;</code></pre>
+        </section>
+
+        <h2 id="enlaces">6. Enlaces</h2>
+
+        <section class="tag">
+            <h2>&lt;a&gt;</h2>
+            <p>Define un hipervínculo que enlaza a otra página o recurso.</p>
+            <pre><code>&lt;a href="https://www.ejemplo.com"&gt;Visita Ejemplo.com&lt;/a&gt;
+&lt;a href="pagina2.html"&gt;Ir a Página 2&lt;/a&gt;
+&lt;a href="mailto:correo@ejemplo.com"&gt;Enviar correo&lt;/a&gt;
+&lt;a href="tel:+123456789"&gt;Llamar&lt;/a&gt;</code></pre>
+        </section>
+
+        <h2 id="multimedia">7. Multimedia</h2>
+
+        <section class="tag">
+            <h2>&lt;img&gt;</h2>
+            <p>Inserta una imagen en el documento.</p>
+            <pre><code>&lt;img src="imagen.jpg" alt="Descripción de la imagen" width="300" height="200"&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;figure&gt;</h2>
+            <p>Representa contenido independiente, a menudo con una imagen y una leyenda.</p>
+            <pre><code>&lt;figure&gt;
+    &lt;img src="grafico.jpg" alt="Gráfico de ventas"&gt;
+    &lt;figcaption&gt;Fig. 1: Ventas del primer trimestre 2025&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;figcaption&gt;</h2>
+            <p>Define una leyenda o título para una figura.</p>
+            <pre><code>&lt;figcaption&gt;Fig. 1: Descripción de la imagen&lt;/figcaption&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;audio&gt;</h2>
+            <p>Inserta contenido de audio en el documento.</p>
+            <pre><code>&lt;audio controls&gt;
+    &lt;source src="cancion.mp3" type="audio/mpeg"&gt;
+    &lt;source src="cancion.ogg" type="audio/ogg"&gt;
+    Tu navegador no soporta el elemento de audio.
+&lt;/audio&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;video&gt;</h2>
+            <p>Inserta contenido de video en el documento.</p>
+            <pre><code>&lt;video width="320" height="240" controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    &lt;source src="video.webm" type="video/webm"&gt;
+    Tu navegador no soporta el elemento de video.
+&lt;/video&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;source&gt;</h2>
+            <p>Especifica recursos alternativos para elementos de audio o video.</p>
+            <pre><code>&lt;source src="video.mp4" type="video/mp4"&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;track&gt;</h2>
+            <p>Especifica pistas de texto para elementos multimedia (como subtítulos).</p>
+            <pre><code>&lt;track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español"&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;canvas&gt;</h2>
+            <p>Define un área de dibujo para gráficos con JavaScript.</p>
+            <pre><code>&lt;canvas id="miCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;svg&gt;</h2>
+            <p>Define un contenedor para gráficos SVG (Scalable Vector Graphics).</p>
+            <pre><code>&lt;svg width="100" height="100"&gt;
+    &lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="red" /&gt;
+&lt;/svg&gt;</code></pre>
+        </section>
+
+        <h2 id="tablas">8. Tablas</h2>
+
+        <section class="tag">
+            <h2>&lt;table&gt;</h2>
+            <p>Define una tabla.</p>
+            <pre><code>&lt;table&gt;
+    &lt;caption&gt;Lista de empleados&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Nombre&lt;/th&gt;
+            &lt;th&gt;Departamento&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Juan&lt;/td&gt;
+            &lt;td&gt;Marketing&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;caption&gt;</h2>
+            <p>Define un título o leyenda para una tabla.</p>
+            <pre><code>&lt;caption&gt;Tabla 1: Datos de ventas 2025&lt;/caption&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;thead&gt;</h2>
+            <p>Agrupa el contenido del encabezado de una tabla.</p>
+            <pre><code>&lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nombre&lt;/th&gt;
+        &lt;th&gt;Edad&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;tbody&gt;</h2>
+            <p>Agrupa el contenido del cuerpo de una tabla.</p>
+            <pre><code>&lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;María&lt;/td&gt;
+        &lt;td&gt;28&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;tfoot&gt;</h2>
+            <p>Agrupa el contenido del pie de una tabla.</p>
+            <pre><code>&lt;tfoot&gt;
+    &lt;tr&gt;
+        &lt;td colspan="2"&gt;Total: 10 empleados&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tfoot&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;tr&gt;</h2>
+            <p>Define una fila de celdas en una tabla.</p>
+            <pre><code>&lt;tr&gt;
+    &lt;td&gt;Celda 1&lt;/td&gt;
+    &lt;td&gt;Celda 2&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;th&gt;</h2>
+            <p>Define una celda de encabezado en una tabla.</p>
+            <pre><code>&lt;th&gt;Nombre del producto&lt;/th&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;td&gt;</h2>
+            <p>Define una celda de datos en una tabla.</p>
+            <pre><code>&lt;td&gt;Producto A&lt;/td&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;colgroup&gt;</h2>
+            <p>Especifica un grupo de una o más columnas para aplicar formato.</p>
+            <pre><code>&lt;colgroup&gt;
+    &lt;col span="2" style="background-color: yellow"&gt;
+    &lt;col style="background-color: lightblue"&gt;
+&lt;/colgroup&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;col&gt;</h2>
+            <p>Especifica propiedades para cada columna dentro de un &lt;colgroup&gt;.</p>
+            <pre><code>&lt;col style="width: 150px"&gt;</code></pre>
+        </section>
+
+        <h2 id="formularios">9. Formularios</h2>
+
+        <section class="tag">
+            <h2>&lt;form&gt;</h2>
+            <p>Define un formulario HTML para entrada del usuario.</p>
+            <pre><code>&lt;form action="/procesar.php" method="post"&gt;
+    &lt;!-- Elementos del formulario --&gt;
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;input&gt;</h2>
+            <p>Define un campo de entrada donde el usuario puede ingresar datos.</p>
+            <pre><code>&lt;!-- Tipos de input --&gt;
+&lt;input type="text" name="nombre" placeholder="Tu nombre"&gt;
+&lt;input type="email" name="email" placeholder="correo@ejemplo.com"&gt;
+&lt;input type="password" name="contraseña"&gt;
+&lt;input type="number" name="edad" min="18" max="99"&gt;
+&lt;input type="checkbox" name="acepto" value="si"&gt;
+&lt;input type="radio" name="genero" value="hombre"&gt;
+&lt;input type="date" name="fecha"&gt;
+&lt;input type="file" name="archivo"&gt;
+&lt;input type="submit" value="Enviar"&gt;
+&lt;input type="reset" value="Restablecer"&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;textarea&gt;</h2>
+            <p>Define un control de entrada de texto multilínea.</p>
+            <pre><code>&lt;textarea name="comentario" rows="4" cols="50" placeholder="Escribe tu comentario aquí"&gt;&lt;/textarea&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;button&gt;</h2>
+            <p>Define un botón clickeable.</p>
+            <pre><code>&lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;button type="reset"&gt;Restablecer&lt;/button&gt;
+&lt;button type="button" onclick="miFuncion()"&gt;Haz clic&lt;/button&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;select&gt;</h2>
+            <p>Define una lista desplegable.</p>
+            <pre><code>&lt;select name="pais"&gt;
+    &lt;option value=""&gt;Selecciona un país&lt;/option&gt;
+    &lt;option value="es"&gt;España&lt;/option&gt;
+    &lt;option value="mx"&gt;México&lt;/option&gt;
+    &lt;option value="ar"&gt;Argentina&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;option&gt;</h2>
+            <p>Define una opción en una lista desplegable.</p>
+            <pre><code>&lt;option value="es"&gt;España&lt;/option&gt;</code></pre>
+        </section>
+
+        <section class="tag">
+            <h2>&lt;optgroup&gt;</h2>
+            <p>Define un grupo de opciones relacionadas en una lista desplegable.</p>
+            <pre><code>&lt;select name="continente"&gt;
+    &lt;optgroup label="Europa"&gt;
+        &lt;option value="es"&gt;España&lt;/option&gt;
+        &lt;option value="fr
